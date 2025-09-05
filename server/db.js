@@ -27,7 +27,7 @@ async function initializeDb() {
 
     console.log('Table "recordings" is ready');
   } catch (err) {
-    console.error('DB initialization error:', err.message);
+    console.error('DB initialization error:', err);
     process.exit(1);
   }
 }
