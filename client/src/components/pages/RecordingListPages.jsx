@@ -6,7 +6,7 @@ const RecordingListPages = () => {
   useEffect(() => {
     const fetchRecordings = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/recordings');
+        const res = await fetch('https://screen-recorder-back.onrender.com/api/recordings');
         const data = await res.json();
         setRecordings(data);
       } catch (err) {
