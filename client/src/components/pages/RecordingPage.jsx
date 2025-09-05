@@ -73,7 +73,7 @@ const RecordingPage = () => {
     formData.append('recording', recordedBlob, `recording_${Date.now()}.webm`);
 
     try {
-      const res = await fetch('http://localhost:5000/api/recordings', {
+      const res = await fetch('https://screen-recorder-back.onrender.com/api/recordings', {
         method: 'POST',
         body: formData
       });
